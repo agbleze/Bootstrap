@@ -65,21 +65,36 @@
       <div class="form-group">
         <label for="emailable">Email address</label>
         <input type="email" class="form-control" aria-label="emailable" placeholder="Enter email">
+      </div>
+      
+      <div class="form-group">
         <label for= "password1">Password</label>
-        <input type="password" class="form-control mb-2" aria-label="pass" placeholder="Password">
+        <input type="password" class="form-control" aria-label="pass" placeholder="Password">
+      </div>
+
+      <div class="form-group">
         <label for="Descript">Description</label>
-        <input type="text" class="form-control height= 12px" placeholder="Write your description here ...">
+        <textarea class="form-control" id="description1" row="3" placeholder="Write your description here ..."></textarea>
+      </div>
+
+      <div class="form-group">
         <label for="pic">You can also add a picture</label>
-        <div class="input-group">
+        <div class="input-group" id="addon2">
           <div class="input-group-prepend">
-          <i class="fas fa-users"></i>">
-          <input 
+            <span class="input-group-text" id="addOn3"><i class="far fa-file-image"></i></span>
           </div>
-          <input type="file" class="form-control" placeholder="Choose file">
-          <div type=""
-          <input type="button" class="btn btn-info rounded" placeholder="Browse"
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="file2" aria-describedby="addOn4">
+            <label for="file2" class="custom-file-label">Choose file</label>
+         </div>
+        </div>
+      </div>
 
-
+      <div class="custom-control custom-checkbox form-group">
+        <input type="checkbox" class="custom-control-input" id="checkbox1">
+        <label class="custom-control-label" for="checkbox1">I have read and understood the Terms & Conditions</label>
+      </div>
+      <button class="btn btn-info">Submit</button>
     </form>
 
 
